@@ -1,0 +1,446 @@
+public class UICalculadora extends javax.swing.JFrame {
+
+    public UICalculadora() {
+        initComponents();
+    }
+     Double valor1, valor2, resultado;
+     String operacao;
+     
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">                          
+    private void initComponents() {
+
+        jFrame1 = new javax.swing.JFrame();
+        jButton20 = new javax.swing.JButton();
+        jButton21 = new javax.swing.JButton();
+        jButton22 = new javax.swing.JButton();
+        jButton23 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        BotaoN7 = new javax.swing.JButton();
+        BotaoN9 = new javax.swing.JButton();
+        BotaoN8 = new javax.swing.JButton();
+        BotaoBarra = new javax.swing.JButton();
+        BotaoX = new javax.swing.JButton();
+        BotaoN6 = new javax.swing.JButton();
+        BotaoN4 = new javax.swing.JButton();
+        BotaoN5 = new javax.swing.JButton();
+        BotaoMenos = new javax.swing.JButton();
+        BotaoN3 = new javax.swing.JButton();
+        BotaoN1 = new javax.swing.JButton();
+        BotaoN2 = new javax.swing.JButton();
+        BotaoMais = new javax.swing.JButton();
+        BotaoIGUAL = new javax.swing.JButton();
+        BotaoCE = new javax.swing.JButton();
+        BotaoN0 = new javax.swing.JButton();
+        txtVisor = new javax.swing.JTextField();
+
+        javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
+        jFrame1.getContentPane().setLayout(jFrame1Layout);
+        jFrame1Layout.setHorizontalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 400, Short.MAX_VALUE)
+        );
+        jFrame1Layout.setVerticalGroup(
+            jFrame1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 300, Short.MAX_VALUE)
+        );
+
+        jButton20.setText("jButton1");
+
+        jButton21.setText("jButton1");
+
+        jButton22.setText("jButton1");
+
+        jButton23.setText("jButton1");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Calculadora");
+
+        jPanel1.setBackground(new java.awt.Color(173, 216, 230));
+        jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.setToolTipText("");
+
+        BotaoN7.setText("7");
+        BotaoN7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN7ActionPerformed(evt);
+            }
+        });
+
+        BotaoN9.setText("9");
+        BotaoN9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN9ActionPerformed(evt);
+            }
+        });
+
+        BotaoN8.setText("8");
+        BotaoN8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN8ActionPerformed(evt);
+            }
+        });
+
+        BotaoBarra.setText("/");
+        BotaoBarra.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoBarraActionPerformed(evt);
+            }
+        });
+
+        BotaoX.setText("X");
+        BotaoX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoXActionPerformed(evt);
+            }
+        });
+
+        BotaoN6.setText("6");
+        BotaoN6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN6ActionPerformed(evt);
+            }
+        });
+
+        BotaoN4.setText("4");
+        BotaoN4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN4ActionPerformed(evt);
+            }
+        });
+
+        BotaoN5.setText("5");
+        BotaoN5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN5ActionPerformed(evt);
+            }
+        });
+
+        BotaoMenos.setText("-");
+        BotaoMenos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoMenosActionPerformed(evt);
+            }
+        });
+
+        BotaoN3.setText("3");
+        BotaoN3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN3ActionPerformed(evt);
+            }
+        });
+
+        BotaoN1.setText("1");
+        BotaoN1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN1ActionPerformed(evt);
+            }
+        });
+
+        BotaoN2.setText("2");
+        BotaoN2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN2ActionPerformed(evt);
+            }
+        });
+
+        BotaoMais.setText("+");
+        BotaoMais.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoMaisActionPerformed(evt);
+            }
+        });
+
+        BotaoIGUAL.setText("=");
+        BotaoIGUAL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoIGUALActionPerformed(evt);
+            }
+        });
+
+        BotaoCE.setText("CE");
+        BotaoCE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoCEActionPerformed(evt);
+            }
+        });
+
+        BotaoN0.setText("0");
+        BotaoN0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BotaoN0ActionPerformed(evt);
+            }
+        });
+
+        txtVisor.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
+        txtVisor.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        txtVisor.setText("                                                              ");
+        txtVisor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtVisorActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(txtVisor, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                        .addContainerGap())
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(BotaoN1, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BotaoN2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(BotaoN3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(BotaoMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(12, 12, 12))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(BotaoN7, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoN8, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoN9, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoBarra, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(BotaoCE, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoN0, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoIGUAL, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoMais, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(BotaoN4, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoN5, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoN6, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(BotaoX, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(txtVisor, javax.swing.GroupLayout.PREFERRED_SIZE, 92, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotaoN7, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN8, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN9, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoBarra, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotaoN4, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN5, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN6, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoX, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(4, 4, 4)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotaoN1, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN2, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN3, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoMenos, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(BotaoMais, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoN0, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoCE, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(BotaoIGUAL, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        pack();
+    }// </editor-fold>                        
+
+    private void BotaoIGUALActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        valor2 = Double.parseDouble(txtVisor.getText());
+        switch(operacao){
+            case "somar":
+                resultado = valor1 + valor2;
+                txtVisor.setText(String.valueOf(resultado));
+            break; 
+            
+            case "sub":
+                resultado = valor1 - valor2;
+                txtVisor.setText(String.valueOf(resultado));
+            break;
+            
+            case "div":
+                resultado = valor1 / valor2;
+                txtVisor.setText(String.valueOf(resultado));
+            break;
+           
+            case "mult":
+                resultado = valor1 * valor2;
+                txtVisor.setText(String.valueOf(resultado));
+            break;
+
+        }
+
+    }                                          
+
+    private void BotaoN3ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "3");
+    }                                       
+
+    private void BotaoMaisActionPerformed(java.awt.event.ActionEvent evt) {                                          
+        valor1 = Double.parseDouble(txtVisor.getText());
+        operacao = "somar";
+        txtVisor.setText("");
+        
+    }                                         
+
+    private void BotaoN9ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "9");
+    }                                       
+
+    private void BotaoN7ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "7");
+    }                                       
+
+    private void BotaoN8ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "8");
+    }                                       
+
+    private void BotaoN4ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "4");
+    }                                       
+
+    private void BotaoN5ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "5");
+    }                                       
+
+    private void BotaoN6ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "6");
+    }                                       
+
+    private void BotaoN1ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+         txtVisor.setText(txtVisor.getText() + "1");
+    }                                       
+
+    private void BotaoN2ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "2");
+    }                                       
+
+    private void BotaoCEActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        valor1 = null;
+        valor2 = null;
+        txtVisor.setText("");
+    }                                       
+
+    private void BotaoN0ActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        txtVisor.setText(txtVisor.getText() + "0");
+    }                                       
+
+    private void BotaoMenosActionPerformed(java.awt.event.ActionEvent evt) {                                           
+        valor1 = Double.parseDouble(txtVisor.getText());
+        operacao = "sub";
+        txtVisor.setText("");
+    }                                          
+
+    private void BotaoXActionPerformed(java.awt.event.ActionEvent evt) {                                       
+        valor1 = Double.parseDouble(txtVisor.getText());
+        operacao = "mult";
+        txtVisor.setText("");
+    }                                      
+
+    private void BotaoBarraActionPerformed(java.awt.event.ActionEvent evt) {                                           
+         valor1 = Double.parseDouble(txtVisor.getText());
+         operacao = "div";
+         txtVisor.setText("");
+    }                                          
+
+    private void txtVisorActionPerformed(java.awt.event.ActionEvent evt) {                                         
+        // TODO add your handling code here:
+    }                                        
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(UICalculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(UICalculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(UICalculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(UICalculadora.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new UICalculadora().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify                     
+    private javax.swing.JButton BotaoBarra;
+    private javax.swing.JButton BotaoCE;
+    private javax.swing.JButton BotaoIGUAL;
+    private javax.swing.JButton BotaoMais;
+    private javax.swing.JButton BotaoMenos;
+    private javax.swing.JButton BotaoN0;
+    private javax.swing.JButton BotaoN1;
+    private javax.swing.JButton BotaoN2;
+    private javax.swing.JButton BotaoN3;
+    private javax.swing.JButton BotaoN4;
+    private javax.swing.JButton BotaoN5;
+    private javax.swing.JButton BotaoN6;
+    private javax.swing.JButton BotaoN7;
+    private javax.swing.JButton BotaoN8;
+    private javax.swing.JButton BotaoN9;
+    private javax.swing.JButton BotaoX;
+    private javax.swing.JButton jButton20;
+    private javax.swing.JButton jButton21;
+    private javax.swing.JButton jButton22;
+    private javax.swing.JButton jButton23;
+    private javax.swing.JFrame jFrame1;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField txtVisor;
+    // End of variables declaration                   
+}
